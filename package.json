@@ -1,0 +1,18 @@
+{
+  "name": "node-blog-talk",
+  "version": "0.0.0",
+  "description": "Building a basic blog using express and leveldb",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mikefrey/node-blog-talk.git"
+  },
+  "author": "Mike Frey <frey.mike@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikefrey/node-blog-talk/issues"
+  }
+}
