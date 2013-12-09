@@ -37,9 +37,9 @@ To run it, just `cd` into the directory and run `npm install && node app.js` the
 
 ### Resources
 
-Express: http://expressjs.com/api.html
-EJS: https://github.com/visionmedia/ejs
-Stylus: http://learnboost.github.io/stylus/
-Level: https://github.com/Level/level
-LevelUP: https://github.com/rvagg/node-levelup
-Sublevel: https://github.com/dominictarr/level-sublevel
+* Express: http://expressjs.com/api.html
+* EJS: https://github.com/visionmedia/ejs
+* Stylus: http://learnboost.github.io/stylus/
+* Level: https://github.com/Level/level
+* LevelUP: https://github.com/rvagg/node-levelup
+* Sublevel: https://github.com/dominictarr/level-sublevel
