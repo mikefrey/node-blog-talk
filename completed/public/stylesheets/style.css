@@ -1,0 +1,53 @@
+body {
+  padding: 50px 200px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #00b7ff;
+}
+h1 {
+  margin-left: -30px;
+  margin-bottom: 40px;
+}
+pre {
+  white-space: pre-line;
+  line-height: 1.4em;
+  font-family: "Lucida Grande", Helvetica;
+  font-size: 1.4em;
+  margin: 0;
+  padding: 0;
+}
+textarea {
+  width: 400px;
+  height: 320px;
+}
+form div {
+  margin-bottom: 8px;
+}
+.post h2 {
+  margin-bottom: 3px;
+}
+.post span {
+  display: block;
+  margin-bottom: 15px;
+}
+.commentForm textarea {
+  height: 100px;
+}
+.comments ul {
+  margin: 0;
+  padding: 0;
+}
+.comments ul li {
+  background-color: #ddd;
+  padding: 15px;
+  list-style: none;
+  margin: 5px;
+}
+.comments ul pre {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+.comments ul span {
+  padding-left: 25px;
+}

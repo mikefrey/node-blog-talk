@@ -1,0 +1,24 @@
+<div id="comments" class="comments">
+
+  <h3><%= comments.length %> Comment<%= comments.length == 1 ? '' : 's' %></h3>
+
+  <ul>
+    <% comments.forEach(function(comment) { %>
+    <li><% include comment %></li>
+    <% }) %>
+  </ul>
+
+  <h3>Post a comment</h3>
+
+  <div class="commentForm">
+    <form action="/posts/<%= post.key %>#comments" method="post">
+      <div>
+        <label for="author">Name</label>
+        <input type="text" id="author" name="author" />
+      </div>
+      <div><textarea name="body"></textarea></div>
+      <div><input type="submit" value="Comment" /></div>
+    </form>
+  </div>
+
+</div>

@@ -1,0 +1,13 @@
+<% include head %>
+
+<% if (!posts.length) { %>
+  No posts yet!
+<% } %>
+
+<div class="posts">
+<% posts.forEach(function(post) { %>
+  <% include partials/post %>
+<% }) %>
+</div>
+
+<% include foot %>
