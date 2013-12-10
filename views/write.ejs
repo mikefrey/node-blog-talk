@@ -1,0 +1,23 @@
+<% include head %>
+
+<div class="write post">
+  <h2>Write a post</h2>
+
+  <form action="/write/<%= post.key||'' %>" method="post">
+    <div>
+      <label for="title">Title</label>
+      <input type="text" id="title" name="title" value="<%= post.title||'' %>" />
+    </div>
+
+    <div><textarea id="body" name="body"><%= post.body||'' %></textarea></div>
+
+    <div><button>Save</button></div>
+  </form>
+
+  <% if (post.key) { %>
+  <a href="/write/<%= post.key %>/destroy">Delete</a>
+  <% } %>
+
+</div>
+
+<% include foot %>
