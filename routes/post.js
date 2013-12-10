@@ -11,13 +11,7 @@ function formatDate(date) {
 
 exports.show = function(req, res) {
   // fetch the post
-  var key = req.params.key
-  Post.get(key, function(err, post) {
-    if (!post) return res.render('error/404')
 
-    // TODO: fetch comments
-    res.render('post', { post:post, comments:[] })
-  })
 }
 
 
