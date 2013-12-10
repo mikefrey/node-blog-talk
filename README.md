@@ -22,7 +22,7 @@ npm install
 npm install -g nodemon
 
 # Start the app with nodemon
-nodemon -w ./ app.js
+npm start
 
 # or start it normally
 node app.js
