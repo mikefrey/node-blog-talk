@@ -56,7 +56,6 @@ if (!key) // new post
 
 // exiting post
 Post.get(key, function(err, post) {
-  if (err) return res.render('error/500')
   if (!post) return res.render('error/404')
   res.render('write', { post:post })
 })
@@ -120,6 +119,18 @@ Post.del(key, function() {
 var post = require('./routes/post')
 
 app.get('/posts/:key', post.show)
+```
+
+#### Post page action `/routes/post.js`
+
+```javascript
+var key = req.params.key
+Post.get(key, function(err, post) {
+  if (!post) return res.render('error/404')
+
+  // TODO: fetch comments
+  res.render('post', { post:post, comments:[] })
+})
 ```
 
 
