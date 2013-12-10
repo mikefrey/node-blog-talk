@@ -94,13 +94,13 @@ post.save(function(err) {
 
 
 
-### Delete a post `/app.js`
+#### Delete a post `/app.js`
 
 ```javascript
 app.get('/write/:key/destroy', write.destroy)
 ```
 
-### Delete action `/app/write.js`
+#### Delete action `/app/write.js`
 
 ```javascript
 var key = req.params.key
@@ -115,7 +115,7 @@ Post.del(key, function() {
 
 
 
-### Post page route `/app.js`
+#### Post page route `/app.js`
 
 ```javascript
 var post = require('./routes/post')
@@ -127,7 +127,7 @@ app.get('/posts/:key', post.show)
 
 
 
-### Comments route `/app.js`
+#### Comments route `/app.js`
 
 ```javascript
 app.post('/posts/:key', express.urlencoded(), post.comment, post.show)
