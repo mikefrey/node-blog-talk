@@ -4,7 +4,7 @@
 $ express --ejs --css stylus myapp
 ```
 
-
+***
 
 
 #### Require home route module `/app.js`
@@ -20,7 +20,7 @@ app.get('/', home.index)
 ```
   
   
-  
+***
   
   
   
@@ -34,7 +34,7 @@ Post.list({ limit:5 }, function(err, posts) {
 ```
 
 
-
+***
 
 
 
@@ -77,18 +77,7 @@ post.save(function(err) {
 ```
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+***
 
 
 
@@ -109,7 +98,7 @@ Post.del(key, function() {
 ```
 
 
-
+***
 
 
 
@@ -134,6 +123,7 @@ Post.get(key, function(err, post) {
 ```
 
 
+***
 
 
 
