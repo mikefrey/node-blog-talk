@@ -18,7 +18,7 @@ exports.show = function(req, res) {
  * POST write
  */
 
-exports.save = function(req, res, next) {
+exports.save = function(req, res) {
   // save the post
 
 }
@@ -28,7 +28,7 @@ exports.save = function(req, res, next) {
  * DELETE write
  */
 
-exports.destroy = function(req, res, next) {
+exports.destroy = function(req, res) {
   // delete the post
 
 }

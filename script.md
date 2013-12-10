@@ -127,13 +127,26 @@ app.get('/posts/:key', post.show)
 
 
 
+#### Fetch comments `/routes/post.js`
+
+```javascript
+Comment.list(key, function(err, comments) {
+  res.render('post', { post:post, comments:comments||[] })
+})
+```
+
+
 #### Comments route `/app.js`
 
 ```javascript
 app.post('/posts/:key', express.urlencoded(), post.comment, post.show)
 ```
 
+#### Save Comment `/routes/post.js`
 
 ```javascript
-
+comment.save(function(err) {
+  if (err) return res.render('500')
+  next()
+})
 ```

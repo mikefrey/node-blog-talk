@@ -13,12 +13,10 @@ exports.show = function(req, res) {
   // fetch the post
   var key = req.params.key
   Post.get(key, function(err, post) {
-    if (err) return res.render('error/500')
     if (!post) return res.render('error/404')
 
-    Comment.list(key, function(err, comments) {
-      res.render('post', { post:post, comments:comments||[] })
-    })
+    // TODO: fetch comments
+    res.render('post', { post:post, comments:[] })
   })
 }
 
@@ -35,8 +33,6 @@ exports.comment = function(req, res, next) {
   comment.body = req.body.body
   comment.date = formatDate(new Date())
 
-  comment.save(function(err) {
-    if (err) return res.render('500')
-    next()
-  })
+  // TODO: save comment
+  next()
 }
