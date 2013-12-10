@@ -18,12 +18,12 @@ var home = require('./routes/index')
 ```javascript
 app.get('/', home.index)
 ```
-
-
-
-
-
-
+  
+  
+  
+  
+  
+  
 #### Fetch last 5 posts `/routes/index.js`
 
 ```javascript
