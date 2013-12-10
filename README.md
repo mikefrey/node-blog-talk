@@ -11,6 +11,9 @@ If you're about to watch me give this talk, awesome! Thanks for coming! You'll p
 # Clone the repo
 git clone https://github.com/mikefrey/node-blog-talk.git
 
+# cd in
+cd node-blog-talk
+
 # Install dependencies
 npm install
 
