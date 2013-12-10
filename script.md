@@ -28,7 +28,6 @@ app.get('/', home.index)
 
 ```javascript
 Post.list({ limit:5 }, function(err, posts) {
-  if (err) return res.render('error/500')
   posts = posts || []
   res.render('index', { posts:posts })
 })

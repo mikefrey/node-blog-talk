@@ -4,6 +4,7 @@
   "description": "Building a basic blog using express and leveldb",
   "main": "app.js",
   "scripts": {
+    "watch": "nodemon -w ./ app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
